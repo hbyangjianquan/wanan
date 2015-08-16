@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg_color" >
+
+    <ImageView
+        android:id="@+id/nightmode_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="?attr/nightmode" />
+
+    <Button
+        android:id="@+id/nightmode_button_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nightmode_user"
+        android:layout_alignTop="@id/nightmode_user"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/nightmode_user"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|left"
+        android:paddingRight="50dp"
+        android:text="夜间模式"
+        android:textColor="?attr/text_color"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/check_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nightmode_user"
+        android:layout_alignRight="@id/nightmode_button_user"
+        android:layout_alignTop="@id/nightmode_user" />
+
+    <View
+        android:id="@+id/line1_user"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/nightmode_user"
+        android:layout_margin="20dp"
+        android:background="?attr/line_color" />
+
+    <ImageView
+        android:id="@+id/collected_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/line1_user"
+        android:layout_marginLeft="30dp"
+        android:scaleType="fitCenter"
+        android:src="?attr/collected" />
+
+    <Button
+        android:id="@+id/collected_button_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/collected_user"
+        android:layout_alignLeft="@id/nightmode_button_user"
+        android:layout_alignTop="@id/collected_user"
+        android:layout_toRightOf="@id/collected_user"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|left"
+        android:paddingRight="50dp"
+        android:text="我的收藏"
+        android:textColor="?attr/text_color"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/line2_user"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/collected_user"
+        android:layout_margin="20dp"
+        android:background="?attr/line_color" />
+
+    <ImageView
+        android:id="@+id/feedback_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/line2_user"
+        android:layout_marginLeft="30dp"
+        android:scaleType="fitCenter"
+        android:src="?attr/feedback" />
+
+    <Button
+        android:id="@+id/feedback_button_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/feedback_user"
+        android:layout_alignLeft="@id/nightmode_button_user"
+        android:layout_alignTop="@id/feedback_user"
+        android:layout_toRightOf="@id/feedback_user"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|left"
+        android:paddingRight="50dp"
+        android:text="用户反馈"
+        android:textColor="?attr/text_color"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/line3_user"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/feedback_user"
+        android:layout_margin="20dp"
+        android:background="?attr/line_color" />
+
+    <ImageView
+        android:id="@+id/about_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/feedback_user"
+        android:layout_below="@id/line3_user"
+        android:scaleType="fitCenter"
+        android:src="?attr/info" />
+
+    <Button
+        android:id="@+id/about_button_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/about_user"
+        android:layout_alignLeft="@id/nightmode_button_user"
+        android:layout_alignTop="@id/about_user"
+        android:layout_toRightOf="@id/about_user"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|left"
+        android:text="关于晚安"
+        android:textColor="?attr/text_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

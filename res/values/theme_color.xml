@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_night">#404040</color>
+    <color name="bg_day">#EFEFEF</color>
+    
+    <color name="line_day">#4F4F4F</color>
+    <color name="line_night">#4F4F4F</color>
+    
+    <color name="text_day">#4F4F4F</color>
+    <color name="text_night">#EEEEEE</color>
+    
+    <color name="actionbar_day">#BFBFBF</color>
+    <color name="actionbar_night">#1C1C1C</color>
+
+</resources>

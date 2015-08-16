@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="text_color" format="reference" />
+    <attr name="bg_color" format="reference" />
+    <attr name="line_color" format="reference" />
+    <attr name="action_bar" format="reference" />
+    <attr name="nightmode" format="reference" />
+    <attr name="collected" format="reference" />
+    <attr name="feedback" format="reference" />
+    <attr name="info" format="reference" />
+    <attr name="back" format="reference" />
+    <attr name="eye" format="reference" />
+    <attr name="music_play" format="reference" />
+    <attr name="music_stop" format="reference" />
+    <attr name="menu" format="reference" />
+
+</resources>

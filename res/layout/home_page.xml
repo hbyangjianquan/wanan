@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg_color"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/loading_bar_home"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/home_date_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/readcount_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="?attr/text_color" />
+
+            <ImageView
+                android:id="@+id/eye_home"
+                android:layout_width="25dp"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@id/readcount_home"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/readcount_home"
+                android:scaleType="fitCenter"
+                android:src="?attr/eye"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/date_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="?attr/text_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_home"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="?attr/line_color"
+            android:layout_below="@id/home_date_layout"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_home"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.1"
+            android:textColor="?attr/text_color"
+            android:textSize="@dimen/title_size"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/author_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_home"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/text_color"
+            android:textSize="@dimen/author_size" />
+
+        <LinearLayout
+            android:id="@+id/layout_image_text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author_home"
+            android:background="?attr/bg_color"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/like_bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_image_text_home"
+            android:background="?attr/bg_color"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <include layout="@layout/like_bar" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_bottom_home"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="?attr/line_color"
+            android:layout_below="@id/like_bar_home"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/author_intro_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_bottom_home"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="?attr/text_color"
+            android:textSize="@dimen/author_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author_intro_home"
+            android:text="\n" />
+    </RelativeLayout>
+
+</ScrollView>

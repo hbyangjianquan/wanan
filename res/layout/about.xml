@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg_color" >
+
+    <ImageView
+        android:id="@+id/goodnight"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic" />
+
+    <TextView
+        android:id="@+id/about1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goodnight"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="致力于提供优质的睡前阅读内容"
+        android:textColor="?attr/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/about2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about1"
+        android:layout_centerHorizontal="true"
+        android:text="分享生活，体味生活"
+        android:textColor="?attr/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="投稿：wananapp@163.com"
+        android:textColor="?attr/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mail"
+        android:layout_below="@id/mail"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="QQ：1522953457"
+        android:textColor="?attr/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/about3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="©所有内容来自网络、书籍、读者投稿等，如原作者不允许我们发布您的作品，请及时联系我们。"
+        android:textColor="?attr/text_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/about4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="iShareriin 工作室"
+        android:textColor="?attr/text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/about5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about3"
+        android:layout_centerHorizontal="true"
+        android:text="版本：2.1"
+        android:textColor="?attr/text_color"
+        android:textSize="13sp" />
+
+</RelativeLayout>

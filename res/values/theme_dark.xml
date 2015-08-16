@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NightTheme" parent="@style/MyStyle">
+        <item name="text_color">@color/text_night</item>
+        <item name="bg_color">@color/bg_night</item>
+        <item name="line_color">@color/line_night</item>
+        <item name="action_bar">@color/actionbar_night</item>
+        <item name="nightmode">@drawable/nightmode_night</item>
+        <item name="collected">@drawable/collected_night</item>
+        <item name="feedback">@drawable/feedback_night</item>
+        <item name="info">@drawable/info_night</item>
+        <item name="back">@drawable/back_night</item>
+        <item name="eye">@drawable/eye_night</item>
+        <item name="music_play">@drawable/music_play_night</item>
+        <item name="music_stop">@drawable/music_stop_night</item>
+        <item name="menu">@drawable/menu_night</item>
+    </style>
+
+    <style name="DayTheme" parent="@style/MyStyle">
+        <item name="text_color">@color/text_day</item>
+        <item name="bg_color">@color/bg_day</item>
+        <item name="line_color">@color/line_day</item>
+        <item name="action_bar">@color/actionbar_day</item>
+        <item name="nightmode">@drawable/nightmode</item>
+        <item name="collected">@drawable/collected</item>
+        <item name="feedback">@drawable/feedback</item>
+        <item name="info">@drawable/info</item>
+        <item name="back">@drawable/back</item>
+        <item name="eye">@drawable/eye</item>
+        <item name="music_play">@drawable/music_play</item>
+        <item name="music_stop">@drawable/music_stop</item>
+        <item name="menu">@drawable/menu</item>
+    </style>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:background="?attr/bg_color" >
+
+    <ImageView
+        android:id="@+id/music_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/music" />
+
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/music_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/music_title"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/author_size" />
+
+    <ImageButton
+        android:id="@+id/music_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="?attr/music_play" />
+
+    <SeekBar
+        android:id="@+id/music_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/music_author"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:paddingLeft="10dp"
+        android:thumb="@drawable/thumb"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/music_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/music_progress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/music_progress"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:textColor="?attr/text_color"
+        android:textSize="12sp" />
+
+</RelativeLayout>

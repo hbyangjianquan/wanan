@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/action_bar"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:text="分享"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/text_size" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/share_button"
+        android:layout_alignRight="@id/share_button"
+        android:layout_below="@id/share_button"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="?attr/line_color" />
+
+    <Button
+        android:id="@+id/comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:text="评论"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/text_size" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/comment_button"
+        android:layout_alignRight="@id/comment_button"
+        android:layout_below="@id/comment_button"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="?attr/line_color" />
+
+    <Button
+        android:id="@+id/favourites_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:text="收藏"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/text_size" />
+
+</RelativeLayout>

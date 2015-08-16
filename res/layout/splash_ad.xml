@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ad_splash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_above="@+id/jump_ad">
+    </RelativeLayout>
+
+    <Button 
+        android:id="@id/jump_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#1C1C1C"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:text="跳过广告  5"/>
+    
+</RelativeLayout>

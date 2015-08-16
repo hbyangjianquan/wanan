@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="libs/universal-image-loader-1.9.3-with-sources.jar"/>
+	<classpathentry kind="lib" path="libs/umeng-analytics-v5.5.3.jar"/>
+	<classpathentry kind="lib" path="libs/com.umeng.fb.5.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_comment.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_UserCenter.jar"/>
+	<classpathentry kind="lib" path="libs/umeng_social_sdk.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_2.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_3.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_Sina.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_WeiXin_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_WeiXin_2.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

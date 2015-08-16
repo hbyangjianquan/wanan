@@ -1,0 +1,96 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/universal-image-loader-1.9.3-with-sources.jar
+-libraryjars libs/umeng-analytics-v5.5.3.jar
+-libraryjars libs/com.umeng.fb.5.3.0.jar
+-libraryjars libs/SocialSDK_comment.jar
+
+-keep public class * extends android.app.Fragment  
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.support.v4.**
+
+-dontwarn com.umeng.fb.**
+-dontshrink
+-dontoptimize
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.umeng.**
+
+-dontwarn com.tencent.weibo.sdk.**
+-dontwarn com.facebook.**
+-libraryjars libs/SocialSDK_QQZone_2.jar
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-keep public interface com.facebook.**
+-keep public interface com.tencent.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+-keep class com.facebook.**
+-keep class com.umeng.scrshot.**
+-keep public class com.tencent.** {*;}
+-keep class com.umeng.**
+-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+-keep class com.umeng.fb.** { *;}
+-keepclassmembers class * {
+   	public <init>(org.json.JSONObject);
+}
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+
+-keep public class com.lewisen.goodnight.R$*{
+	public static final int *;
+}
+-keep class com.umeng.onlineconfig.OnlineConfigAgent {
+        public <fields>;
+        public <methods>;
+
+}
+
+-keep class com.umeng.onlineconfig.OnlineConfigLog {
+        public <fields>;
+        public <methods>;
+}
+
+-keep interface com.umeng.onlineconfig.UmengOnlineConfigureListener {
+        public <methods>;
+}
+
+-keep class com.baidu.mobads.** {
+		public protected *;
+}

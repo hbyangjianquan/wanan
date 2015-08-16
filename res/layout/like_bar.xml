@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/like_bar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/like_bar_image"
+        android:layout_alignRight="@+id/like_bar_count"
+        android:background="@android:color/transparent"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/like_bar_image"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/like_bar_button"
+        android:layout_alignTop="@id/like_bar_button"
+        android:layout_toLeftOf="@id/like_bar_count"
+        android:paddingBottom="2dp"
+        android:paddingRight="3dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/unlike"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/like_bar_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/like_bar_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/like_bar_button"
+        android:gravity="center_vertical"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/author_size"
+        android:visibility="invisible" />
+
+</RelativeLayout>
